@@ -1,6 +1,8 @@
 services:
   app:
     build: ../onepage-app
+    volumes:
+      - ../onepage-app/index.php:/var/www/html/index.php # <--- MAGIC!
     ports:
       - "80:80"
     depends_on:
