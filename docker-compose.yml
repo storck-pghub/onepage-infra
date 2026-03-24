@@ -2,7 +2,7 @@ services:
   app:
     build: ../onepage-app
     volumes:
-      - ../onepage-app/index.php:/var/www/html/index.php
+      - ../onepage-app/index.php:/var/www/html
     ports:
       - "80:80"
     depends_on:
